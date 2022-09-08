@@ -1,3 +1,11 @@
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int _putchar(char);
 void shell_loop(void);
 void non_interractive(void);
 int check_cmd_type(char *command);
@@ -17,3 +25,5 @@ int is_delimeter(const char *delimeters, char c);
 char **tokenize(char *str, const char *delim);
 int _strcmp(char *first, char *second);
 void free_tokenized(char **tokens);
+
+#endif
